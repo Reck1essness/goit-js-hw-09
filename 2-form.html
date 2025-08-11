@@ -5,20 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page 3</title>
-    <script type="module" crossorigin src="/goit-js-hw-09/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-09/assets/styles-CFrPtiMb.css">
+    <script type="module" crossorigin src="/goit-js-hw-09/2-form.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-09/assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-09/assets/2-form-D0nnWJIm.css">
   </head>
   <body>
-   
-
     <main>
       <div class="container">
+        <div class="back-btn-form">
         <a class="back-link" href="./index.html">Go back</a>
+          <div class="container-back">
         <h1 class="main-title">
-          Form
+          Feedback form
         </h1>
+        </div>
+        </div>
+
+        <form class="feedback" autocomplete="off">
+          <div class="feedback-form email">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required />
+          </div>
+
+          <div class="feedback-form message">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="5" required></textarea>
+          </div>
+        <div class="container-btn">
+          <button type="button" class="btn">
+            Submit
+          </button>
+        </div>
       </div>
     </main>
-
   </body>
 </html>
