@@ -31,6 +31,8 @@ function clearForm() {
   localStorage.removeItem(STORAGE_KEY);
   form.reset();
 }
+
+loadFromLocalStorage();
 form.addEventListener('input', event => {
   const { name, value } = event.target;
   if (name === 'email' || name === 'message') {
@@ -47,4 +49,3 @@ form.addEventListener('submit', event => {
   console.log('Дані форми:', formData);
   clearForm();
 });
-document.addEventListener('DOMContentLoaded', loadFromLocalStorage);
