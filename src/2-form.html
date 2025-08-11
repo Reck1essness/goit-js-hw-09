@@ -5,20 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page 3</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/2-form.css" />
+    <script type="module" src="./js/2-form.js"></script>
   </head>
   <body>
-   
-
     <main>
       <div class="container">
+        <div class="back-btn-form">
         <a class="back-link" href="./index.html">Go back</a>
+          <div class="container-back">
         <h1 class="main-title">
-          Form
+          Feedback form
         </h1>
+        </div>
+        </div>
+
+        <form class="feedback" autocomplete="off">
+          <div class="feedback-form email">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required />
+          </div>
+
+          <div class="feedback-form message">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="5" required></textarea>
+          </div>
+        <div class="container-btn">
+          <button type="button" class="btn">
+            Submit
+          </button>
+        </div>
       </div>
     </main>
-    <script type="module" src="./js/2-form.js"></script>
-
   </body>
 </html>

@@ -1,0 +1,105 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+    /* line-height: 24px; */ 
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1440px;
+    height: auto;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+
+.feedback {
+    width: 408px;
+    height: 296px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 24px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 360px;
+}
+
+.back-btn-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-back {
+    margin-left: 75px;
+}
+
+.feedback-form.email {
+  height: 72px;
+}
+
+.feedback-form.email input {
+  width: 360px;
+  height: 40px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.feedback-form.message {
+  height: 112px;
+}
+.feedback-form.message textarea {
+  width: 360px;
+  min-height: 80px;
+  padding: 8px;
+  box-sizing: border-box;
+  resize: none;
+  overflow: hidden;
+}
+
+.btn {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    border-radius: 8px;
+    padding: 8px 16px;
+    width: 95px;
+    height: 40px;
+    background: #4e75ff;
+    color: #F5F5F5;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+}
+
+.back-link {
+    background-color: #4D5AE5;
+    border: none;
+    border-radius: 2px;
+    color: black;
+    padding: 5px 5px;
+}
